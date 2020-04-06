@@ -1,0 +1,11 @@
+<h1>Here's Your Selected Artist </h1>
+<p>
+<%= @artist.name %><br/>
+<ul>
+<% @songs.each do |s|  %>
+<li>
+<%= link_to s.title, songs_path(s.id) %>
+</li>
+<% end %>
+</ul>
+</p>

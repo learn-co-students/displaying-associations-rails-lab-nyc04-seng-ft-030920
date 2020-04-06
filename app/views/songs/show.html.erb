@@ -1,0 +1,5 @@
+<h1>Here's Your Selected Song </h1>
+<p>
+<%= @song.title %><br/>
+<%= link_to @song.artist.name, artist_path(@song.artist.id) %>
+</p>
